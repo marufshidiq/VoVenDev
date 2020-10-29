@@ -9,6 +9,7 @@ export default function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.textLeft}>&copy; 2020 - {version}</div>
+      <div className={styles.textCenter}>https://otomasi.sv.ugm.ac.id</div>
       <div className={styles.batteryPosition}>
         <Battery />
       </div>

@@ -20,11 +20,25 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 16px;
   line-height: 10px;
 
   color: $primary-white;
+}
+
+.textCenter {
+  position: absolute;
+  height: 10px;
+  left: 331px;
+  top: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 10px;
+  text-align: center;
+
+  color: #ffffff;
 }
 
 .batteryPosition {
