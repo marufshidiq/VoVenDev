@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Footer.module.scss";
 import Battery from "./Battery";
 import Network from "./Network";
+import Clock from "./Clock";
 
 export default function Footer() {
   const version = "v0.2.1";
@@ -13,6 +14,9 @@ export default function Footer() {
       </div>
       <div className={styles.networkPosition}>
         <Network />
+      </div>
+      <div className={styles.clockPosition}>
+        <Clock />
       </div>
     </div>
   );

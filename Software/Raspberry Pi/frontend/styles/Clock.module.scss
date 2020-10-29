@@ -1,0 +1,13 @@
+@import "variables";
+
+.clock {
+  display: flex;
+}
+
+.clock svg {
+  margin-right: 5px;
+}
+
+:export {
+  white: $primary-white;
+}
