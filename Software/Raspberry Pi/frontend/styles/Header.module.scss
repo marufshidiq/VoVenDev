@@ -1,0 +1,30 @@
+@import "variables";
+
+.header {
+  display: flex;
+  background-color: $primary-blue;
+  color: $primary-white;
+  height: 50px;
+  padding: 0px 28px 0px 28px;
+}
+
+.logoText {
+  position: absolute;
+  height: 10px;
+  left: 76px;
+  top: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.logoImg {
+  position: absolute;
+  width: 34px;
+  height: 36px;
+  left: 28px;
+  top: 7px;
+}
