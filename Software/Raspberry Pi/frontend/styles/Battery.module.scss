@@ -1,0 +1,13 @@
+@import "variables";
+
+.battery {
+  display: flex;
+}
+
+.battery svg {
+  margin-right: 5px;
+}
+
+:export {
+  white: $primary-white;
+}
