@@ -27,9 +27,16 @@
   color: $primary-white;
 }
 
-.battery {
+.batteryPosition {
   position: absolute;
   height: 16px;
   left: 709px;
+  top: 7px;
+}
+
+.networkPosition {
+  position: absolute;
+  height: 16px;
+  left: 801px;
   top: 7px;
 }

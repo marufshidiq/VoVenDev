@@ -1,0 +1,13 @@
+@import "variables";
+
+.network {
+  display: flex;
+}
+
+.network svg {
+  margin-right: 5px;
+}
+
+:export {
+  white: $primary-white;
+}
