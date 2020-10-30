@@ -2,6 +2,7 @@
 
 .header {
   display: flex;
+  align-items: center;
   background-color: $primary-blue;
   color: $primary-white;
   height: 50px;
@@ -9,10 +10,7 @@
 }
 
 .logoText {
-  position: absolute;
   height: 10px;
-  left: 76px;
-  top: 20px;
 
   font-family: Roboto;
   font-style: normal;
@@ -22,9 +20,7 @@
 }
 
 .logoImg {
-  position: absolute;
   width: 34px;
   height: 36px;
-  left: 28px;
-  top: 7px;
+  margin-right: 10px;
 }

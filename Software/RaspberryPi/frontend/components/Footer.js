@@ -10,14 +10,16 @@ export default function Footer() {
     <div className={styles.footer}>
       <div className={styles.textLeft}>&copy; 2020 - {version}</div>
       <div className={styles.textCenter}>https://otomasi.sv.ugm.ac.id</div>
-      <div className={styles.batteryPosition}>
-        <Battery />
-      </div>
-      <div className={styles.networkPosition}>
-        <Network />
-      </div>
-      <div className={styles.clockPosition}>
-        <Clock />
+      <div className={styles.icon}>
+        <div className={styles.batteryPosition}>
+          <Battery />
+        </div>
+        <div className={styles.networkPosition}>
+          <Network />
+        </div>
+        <div className={styles.clockPosition}>
+          <Clock />
+        </div>
       </div>
     </div>
   );

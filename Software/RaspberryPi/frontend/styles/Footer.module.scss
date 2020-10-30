@@ -1,11 +1,11 @@
 @import "variables";
 
 .footer {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 30px;
-  left: 0px;
-  top: 570px - 2px;
 
   background-color: $primary-blue;
   color: $primary-white;
@@ -13,10 +13,7 @@
 }
 
 .textLeft {
-  position: absolute;
   height: 10px;
-  left: 26px;
-  top: 10px;
 
   font-family: Roboto;
   font-style: normal;
@@ -27,10 +24,7 @@
 }
 
 .textCenter {
-  position: absolute;
   height: 10px;
-  left: 331px;
-  top: 10px;
 
   font-family: Roboto;
   font-style: normal;
@@ -41,24 +35,23 @@
   color: #ffffff;
 }
 
+.icon {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    margin: 0 3px;
+  }
+}
+
 .batteryPosition {
-  position: absolute;
   height: 16px;
-  left: 709px;
-  top: 7px;
 }
 
 .networkPosition {
-  position: absolute;
   height: 16px;
-  left: 801px;
-  top: 7px;
 }
 
 .clockPosition {
-  position: absolute;
-  width: 63px;
-  height: 17px;
-  left: 937px;
-  top: 7px;
+  height: 16px;
 }
