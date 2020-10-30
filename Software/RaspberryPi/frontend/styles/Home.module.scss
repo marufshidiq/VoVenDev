@@ -1,5 +1,7 @@
 @import "variables";
 
+$br: 50px;
+
 .container {
   display: flex;
   flex-direction: column;
@@ -17,4 +19,29 @@
 .content {
   flex-grow: 1;
   overflow: auto;
+}
+
+.realtime {
+  display: flex;
+  flex-wrap: wrap;
+  width: 345px;
+  height: 350px;
+  align-items: space-between;
+  justify-content: space-between;
+
+  div:nth-child(1) {
+    border-radius: $br 0 0 0;
+  }
+
+  div:nth-child(2) {
+    border-radius: 0 $br 0 0;
+  }
+
+  div:nth-child(3) {
+    border-radius: 0 0 0 $br;
+  }
+
+  div:nth-child(4) {
+    border-radius: 0 0 $br 0;
+  }
 }
