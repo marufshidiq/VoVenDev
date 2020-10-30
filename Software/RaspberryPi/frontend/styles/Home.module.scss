@@ -21,6 +21,20 @@ $br: 50px;
   overflow: auto;
 }
 
+.personalize_button {
+  display: flex;
+  width: 345px;
+  justify-content: space-between;
+
+  div:nth-child(1) {
+    border-radius: 15px 0 0 15px;
+  }
+
+  div:nth-child(3) {
+    border-radius: 0 15px 15px 0;
+  }
+}
+
 .realtime {
   display: flex;
   flex-wrap: wrap;
