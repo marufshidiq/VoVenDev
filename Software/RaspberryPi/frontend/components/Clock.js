@@ -5,10 +5,15 @@ export default function Clock() {
   const [time, setTime] = useState("--:--");
   const [check, setCheck] = useState(0);
 
+  const twoDigit = (number) => {
+    if (number < 10) return "0" + number;
+    else return number;
+  };
+
   useEffect(() => {
     const id = setInterval(() => {
       const now = new Date();
-      setTime(now.getHours() + ":" + now.getMinutes());
+      setTime(twoDigit(now.getHours()) + ":" + twoDigit(now.getMinutes()));
       setCheck(check + 1);
     }, 1000);
     return () => clearInterval(id);
