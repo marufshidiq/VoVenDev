@@ -8,6 +8,10 @@ import MaleIcon from "../assets/Icons/MaleIcon";
 import FemaleIcon from "../assets/Icons/FemaleIcon";
 import HeightIcon from "../assets/Icons/HeightIcon";
 import WeightIcon from "../assets/Icons/WeightIcon";
+import StartIcon from "../assets/Icons/StartIcon";
+import StopIcon from "../assets/Icons/StopIcon";
+import SetupIcon from "../assets/Icons/SetupIcon";
+import DataIcon from "../assets/Icons/DataIcon";
 
 export default function Home() {
   return (
@@ -35,9 +39,9 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.control_container}>
-          <Button icon={HeightIcon} text={"START"} />
-          <Button icon={HeightIcon} text={"SETTINGS"} />
-          <Button icon={HeightIcon} text={"DATA"} />
+          <Button icon={StartIcon} text={"START"} />
+          <Button icon={SetupIcon} text={"SETUP"} />
+          <Button icon={DataIcon} text={"DATA"} />
         </div>
       </div>
       <Footer />
