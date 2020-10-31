@@ -39,6 +39,10 @@ $br: 50px;
 
 .chart_container {
   width: 100%;
+  padding-right: 20px;
+  tspan {
+    fill: #666;
+  }
 }
 
 .control_container {

@@ -14,15 +14,43 @@ import SetupIcon from "../assets/Icons/SetupIcon";
 import DataIcon from "../assets/Icons/DataIcon";
 
 export default function Home() {
+  const data = [
+    {
+      p: 25,
+      f: 60,
+      v: 500,
+    },
+  ];
   return (
     <div className={styles.container}>
       <Header />
       <div className={styles.content}>
         <div className={styles.data_container}>
           <div className={styles.chart_container}>
-            <Chart height={100 / 3 + "%"} width="95%" />
-            <Chart height={100 / 3 + "%"} width="95%" />
-            <Chart height={100 / 3 + "%"} width="95%" />
+            <Chart
+              height={100 / 3 + "%"}
+              width="95%"
+              data={data}
+              dataKey="p"
+              name="Pressure"
+              unit="mmHg"
+            />
+            <Chart
+              height={100 / 3 + "%"}
+              width="95%"
+              data={data}
+              dataKey="f"
+              name="Flow Rate"
+              unit="SLPM"
+            />
+            <Chart
+              height={100 / 3 + "%"}
+              width="95%"
+              data={data}
+              dataKey="v"
+              name="Volume"
+              unit="ml"
+            />
           </div>
           <div className={styles.data_section}>
             <div className={styles.personalize_button}>
