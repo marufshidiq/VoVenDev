@@ -48,7 +48,6 @@ export default function Chart(props) {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
-        <Tooltip />
         <Area
           type="monotone"
           dataKey="uv"
