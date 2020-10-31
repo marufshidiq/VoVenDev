@@ -1,2 +1,7 @@
 $primary-blue: #004a74;
 $primary-white: white;
+
+:export {
+  primary_white: $primary-white;
+  primary_blue: $primary-blue;
+}
