@@ -21,6 +21,8 @@ export default function Chart(props) {
           <XAxis dataKey="number" />
           <YAxis />
           <Area
+            animationEasing="linear"
+            animationDuration={0}
             type="monotone"
             dataKey={dataKey}
             stroke={styles.primary_white}

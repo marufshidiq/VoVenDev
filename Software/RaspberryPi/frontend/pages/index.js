@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -14,13 +15,28 @@ import SetupIcon from "../assets/Icons/SetupIcon";
 import DataIcon from "../assets/Icons/DataIcon";
 
 export default function Home() {
-  const data = [
+  const [check, setCheck] = useState(0);
+  const [data, setData] = useState([
     {
       p: 25,
       f: 60,
       v: 500,
     },
-  ];
+  ]);
+  useEffect(() => {
+    const id = setInterval(() => {
+      const p = Math.floor(Math.random() * 60);
+      const f = Math.floor(Math.random() * 150) - 75;
+      const v = Math.floor(Math.random() * 800);
+      const newData = data.concat({ p, f, v });
+      if (newData.length > 50) {
+        newData.shift();
+      }
+      setData(newData);
+      setCheck(check + 1);
+    }, 100);
+    return () => clearInterval(id);
+  }, [check]);
   return (
     <div className={styles.container}>
       <Header />
@@ -29,7 +45,7 @@ export default function Home() {
           <div className={styles.chart_container}>
             <Chart
               height={100 / 3 + "%"}
-              width="95%"
+              width="100%"
               data={data}
               dataKey="p"
               name="Pressure"
@@ -37,7 +53,7 @@ export default function Home() {
             />
             <Chart
               height={100 / 3 + "%"}
-              width="95%"
+              width="100%"
               data={data}
               dataKey="f"
               name="Flow Rate"
@@ -45,7 +61,7 @@ export default function Home() {
             />
             <Chart
               height={100 / 3 + "%"}
-              width="95%"
+              width="100%"
               data={data}
               dataKey="v"
               name="Volume"
